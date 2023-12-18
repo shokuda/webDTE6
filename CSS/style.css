@@ -1,0 +1,137 @@
+/*Inicio post*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+.navbar{
+	box-shadow: 0 0 7px;
+	background-color: #eeecec;
+}
+
+.text-center {
+  color: white; /* Color de texto */
+  padding: 2%; /* Espaciado interior */
+}
+
+/* Añade estos estilos para el slider */
+.slider-container {
+	margin-left: 15%;
+	width: 70%; /* Cambia el ancho del contenedor del slider al 20% */
+	height: 37.5vh; /* Establece la altura del 100% de la ventana gráfica */
+	overflow: hidden;
+  }
+  
+  .slider {
+	width: 100%; /* Ajusta el ancho del slider al 100% del contenedor */
+	height: 100%; /* Ajusta la altura del slider al 100% del contenedor */
+	display: flex;
+	transition: transform 0.5s ease;
+  }
+  
+  .slide {
+	flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho del slider */
+  }
+  
+  .slide img {
+	width: 100%; /* Ajusta la imagen al 100% del ancho del slide */
+	height: 100%; /* Ajusta la imagen al 100% de la altura del slide */
+  }
+  
+  /* Resto de tus estilos CSS */
+  
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente */
+	height: 100vh; /* Establece la altura para centrar en ambos ejes */
+}  
+
+.contenedor-filtros {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+}
+
+.tarjeta {
+  position: relative;
+  border-radius: 10px;
+  min-height: 150px;
+  font-weight: bold;
+  color: rgb(172, 255, 255);
+  overflow: hidden;
+  border: 2px solid black;
+}
+  
+.tarjeta::before {
+  content: "";
+  background-color: #bceeff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2.5px);
+  z-index: -1;
+}
+
+.tarjeta .textos {
+  color: #383838;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+
+
+.search {
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+.contenedorPost {
+	width: 100%;
+	padding: 40px ;   
+}
+
+.contenedorPostCard {
+  padding: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10%;
+}  
+
+.card{
+	border: 3px solid rgb(152, 203, 234);
+}
+
+.card-img-top{
+	height: 50%;
+}
+
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
