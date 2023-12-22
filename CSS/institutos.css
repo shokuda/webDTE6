@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 97.5%;
+	margin: auto;
+	padding: 20px 0;
+
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+
+.separaciones {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 10px;
+}
+
+/* Estilos para encabezados */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para secciones */
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el acordeón */s
+
+.programa {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el acordeón */
+ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+}
+
+.accordion {
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Añadir un estilo para mostrar el panel activo */
+.active {
+    display: block;
+} 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="instituto 229 Profesorado de educación secundaria de la modalidad técnico profesional en concurrencia con título de base">
+    <link rel="stylesheet" href="../CSS/institutos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../IMG/imagenP.png" />
+    <title>Instituto 229</title>
+</head>
+<body style="background-color: #f9f9f9;">
+    <nav class="navbar" style = "	box-shadow: 0 0 7px; background-color: #eeecec;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="../IMG/logo-pba.svg" alt="Logo PBA" width="100%" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </nav>
+
+    <div class="contenedor">
+        <div class="separaciones">
+            <section id="inicio">
+                <h2>Sobre el Instituto 229</h2><br>
+                <p>Instituto Superior de Formación Docente n°229 es una institución educativa que se centra en la formación de docentes. De gestión Estatal, este instituto tiene como objetivo principal brindar una educación de calidad a sus estudiantes para que puedan desempeñarse de manera efectiva en su rol como docentes.</p>
+            </section>
+
+            <section id="programas">
+                <h2>Carreras</h2>
+                <ul>
+                    <li>
+                        <button class="accordion">Profesorado de educación secundaria de la modalidad técnico profesional en concurrencia con título de base.</button>
+                        <div class="panel">
+                            <p>Cursable en:</p>
+                            <ul>
+                                <li>
+                                    <p>Turno Vespertino</p>
+                                    <a href="https://isfd229-bue.infd.edu.ar/sitio/">Inscripciones</a>
+                                </li>
+                            </ul><br>
+                            <p>Diseño curricular:</p>
+                            <ul>
+                                <p><a href="https://des-ers.infd.edu.ar/sitio/wp-content/uploads/2021/09/3784-17_CGE_Aprueba_Disen_o_Curricular_Carrera_-Profesorado_de_Educacion_Secundaria_de_la_Modalidad_Tecnico_Superior_en_concurrencia_con_titulo_de_base.pdf">PDF</a></p>
+                            </ul>
+                            <p>Descripción:</p>
+                            <ul>
+                                <p>El Profesorado de Educación Secundaria de la Modalidad Técnico Profesional en Concurrencia con Título de Base es una carrera orientada a formar docentes para la enseñanza técnico-profesional en instituciones de nivel secundario. Los/las estudiantes adquieren competencias pedagógicas específicas para guiar a su alumnado en campos técnicos y profesionales, así como en la formación ciudadana y valores. Esta formación es esencial para asegurar una educación técnica de calidad y la preparación de futuros/as profesionales en diversas disciplinas. Quienes se gradúan de esta carrera juegan un papel fundamental en la formación de la próxima generación de técnicos y profesionales, contribuyendo al desarrollo económico y social de sus comunidades.</p>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <script>
+                var accordions = document.getElementsByClassName("accordion");
+                var i;
+            
+                for (i = 0; i < accordions.length; i++) {
+                    accordions[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>    
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.5505981002107!2d-58.53988648940555!3d-34.53961217286452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0b380a190c5%3A0x63694825809af491!2sVirrey%20Loreto%202564%2C%20B1606DQH%20Munro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697324467450!5m2!1ses-419!2sar" width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Ubicación y contacto</h5>
+              <p class="card-text">Virrey Loreto 2564 - Munro</p>
+              <p class="card-text">1147566300</p>
+              <p class="card-text">institutosuperior229@gmail.com</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://www.facebook.com/ISFD229/" class="card-link">Facebook</a></li>
+              </ul>
+        </div>
+
+    </div>
+</body>
+</html>

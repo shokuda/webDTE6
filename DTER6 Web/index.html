@@ -1,0 +1,181 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link rel="stylesheet" href="../CSS/style.css">
+      <link rel="shortcut icon" href="../IMG/imagenP.png" />
+      <title>Inicio</title>
+  </head>
+  <body>
+      
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">
+        <img src="../IMG/logo-pba.svg" alt="Logo" width="100%" class="d-inline-block align-text-top">
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Registro de Institutos</button>
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel" style="color: black;">Registro de Institutos - Iniciar Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="login-form">
+                <div class="mb-2">
+                  <label for="username" class="form-label" style="color: black;">Usuario</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="mb-2">
+                  <label for="password" class="form-label" style="color: black;">Contraseña</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button onclick="validateLogin()" class="btn btn-primary">Acceder</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+  </nav>
+
+  <div class="text-center" style="color: black; padding: 2%;">
+    <h2>Ofertas de Educación Superior - Region 6</h2>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="../IMG/199.jpg" alt="Imagen 1">
+      </div>
+      <div class="slide">
+        <img src="../IMG/217.jpg" alt="Imagen 2">
+      </div>
+      <div class="slide">
+        <img src="../IMG/140.jpg" alt="Imagen 3">
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/filtros.js"></script>
+  <div class="contenedor">
+    <div class="contenedor-filtros">
+      <div class="tarjeta" data-category="sanisidro">
+        <div class="textos">
+          <h3>San Isidro</h3>
+        </div>
+      </div>
+      <div class="tarjeta" data-category="vicentelopez">
+        <div class="textos">
+          <h3>Vicente López</h3>
+        </div>
+      </div>
+      <div class="tarjeta" data-category="sanfernando">
+        <div class="textos">
+          <h3>San Fernando</h3>
+        </div>
+      </div>
+
+      <div class="tarjeta" data-category="tigre">
+        <div class="textos">
+          <h3>Tigre</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="contenedorPost">
+
+    <form class="search d-flex" role="search">
+      <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar por nombre del instituto" aria-label="Search" style="border: 3px solid rgb(152, 203, 234);">
+    </form>
+
+    <div class="contenedorPostCard">
+      <div class="card" id="instituto39 vicentelopez Profesorado - Educacion Inicial TT y TV, Practicas en Terreno Inicial 3° TT Y TV, Profesorado - Educacion Inicial TM y TV, Coordinación del Profesorado de Educacion Primaria, Profesorado de Lengua y Literatura, Matematica, Biologia, Educación Fisica, Historia" style="width: 18rem;">
+        <img src="../IMG/39" class="card-img-top" alt="Imagen establecimiento Instituto 39">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 39</h5>
+          <p class="card-text">Agustin Alvarez 1459 - Vicente López</p>
+          <a href="instituto39.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto77 vicentelopez Profesorado - Educacion Especial, Tecnicatura - Trabajo Social, Tecnicatura - Comunicacion Social, Profesorado - Ingles" style="width: 18rem;">
+        <img src="../IMG/77.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 77">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 77</h5>
+          <p class="card-text">Sargento Cabral 2772 - Munro</p>
+          <a href="instituto77.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto220 vicentelopez Tecnicatura - Superior en Alimentos, Tecnicatura - Superior Higiene y Trabajo, Tecnicatura - Superior Desarrollo de Software" style="width: 18rem;">
+        <img src="../IMG/220-229.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 220">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 220</h5>
+          <p class="card-text">Virrey Loreto 2564 - Munro</p>
+          <a href="instituto220.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto229 vicentelopez Profesorado de educación secundaria de la modalidad técnico profesional en concurrencia con título de base" style="width: 18rem;">
+        <img src="../IMG/220-229.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 229">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 229</h5>
+          <p class="card-text">Virrey Loreto 2564 - Munro</p>
+          <a href="instituto229.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto52 sanisidro Profesorado - Ingles, Educación Primaria, Economia, Tecns. de Eq. e Inst. Electromecanicas" style="width: 18rem;">
+        <img src="../IMG/52.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 52">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 52</h5>
+          <p class="card-text">Rivadavia 349 - San Isidro</p>
+          <a href="instituto52.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto117 sanfernando Profesorado - Educación Primaria, Inicial, Profesorado - Secundaria Quimica, Geografía" style="width: 18rem;">
+        <img src="../IMG/117.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 117">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 117</h5>
+          <p class="card-text">3 de Febrero 1810 - San Fernando</p>
+          <a href="instituto117.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto217 sanfernando Tecnicatura Superior en Seguridad e Higiene" style="width: 18rem;">
+        <img src="../IMG/217.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 217">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 217</h5>
+          <p class="card-text">Av. Libertador 1262 - San Fernando</p>
+          <a href="instituto217.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div><div class="card" id="instituto140 tigre Profesorado - Educación Primaria, Profesorado - Secundaria Matematica, Biologia y Fisica, Tecnicatura - Superior en Alimentos" style="width: 18rem;">
+        <img src="../IMG/140.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 140">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 140</h5>
+          <p class="card-text">Hipólito Irigoyen 20, B1617 Gral. Pacheco</p>
+          <a href="instituto140.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div>
+      <div class="card" id="instituto199 tigre Tecnicatura - Superior en Admin. Recursos Humanos, Higiene y Seguridad del trabajo, Logística, Turismo, Hotelería, Energía Eléctrica con or. Digitalización" style="width: 18rem;">
+        <img src="../IMG/199.jpg" class="card-img-top" alt="Imagen establecimiento Instituto 199">
+        <div class="card-body">
+          <h5 class="card-title">Instituto 199</h5>
+          <p class="card-text">Maestra Celina Voena 1700 - El talar Tigre</p>
+          <a href="instituto199.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div>
+      <div class="card" id="Conservatorio de musica San Isidro profesorado instrumento canto direccion coral composicion educacion musical musicologia" style="width: 18rem;">
+        <img src="../IMG/conservatorio.jpg" class="card-img-top" alt="Imagen establecimiento Conservatorio de musica">
+        <div class="card-body">
+          <h5 class="card-title">Conservatorio de musica</h5>
+          <p class="card-text">Av. Sta Fe 1740, Martínez</p>
+          <a href="conservatorio.html" class="btn btn-primary">Saber más...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="../JS/slider.js"></script>
+  <script src="../JS/search.js"></script>
+  <script src="../JS/filtros.js"></script>
+  <script src="../JS/validate.js"></script>
+  </body>
+  </html>
+  <!--style="background-color: rgb( 0, 166, 177);" azul gob-->

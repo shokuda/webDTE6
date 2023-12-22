@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="#">
+        <link rel="shortcut icon" href="../IMG/imagenP.png" />
+        <title>Registro de Institutos</title>
+    </head>
+<body style="overflow: hidden;">
+    <nav class="navbar" style = "box-shadow: 0 0 7px #9b9b9b;">
+        <div class="container-fluid">
+          <div class="navbar-brand" href="#">
+            <img src="../IMG/logo-pba.svg" alt="Logo" width="100%" class="d-inline-block align-text-top">
+        </div>
+    </nav>
+    <h1 style="padding: 1%;">Ingrese los datos del instituto</h1>
+    <form class="row g-5" style="padding: 1%;" action="../DTER6 Web/form-php/instis.php" method="post" onsubmit="return confirmSubmit()">
+        <div class="col-md-4">
+        <label for="nombre" class="form-label">Nombre del Instituto:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="col-md-2">
+          <label for="instituto" class="form-label">Instituto N°:</label>
+          <input type="text" class="form-control" id="instituto" name="instituto">
+        </div>
+        <div class="col-md-6">
+          <label for="direccion" class="form-label">Dirección:</label>
+          <input type="text" class="form-control" id="direccion" name="direccion">
+        </div>
+        <div class="col-md-2">
+          <label for="telefono" class="form-label">Teléfono:</label>
+          <input type="text" class="form-control" id="telefono" name="telefono">
+        </div>
+        <div class="col-md-2">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="col-md-2">
+            <label for="instagram" class="form-label">Instagram Usuario:</label>
+            <input type="text" class="form-control" id="instagram" name="instagram">
+        </div>
+        <div class="col-md-2">
+            <label for="face" class="form-label">Facebook Usuario:</label>
+            <input type="text" class="form-control" id="face" name="face">
+        </div>
+        <div class="col-md-2">
+            <label for="twitter" class="form-label">Twitter Usuario:</label>
+            <input type="text" class="form-control" id="twitter" name="twitter">
+        </div>
+        <div class="col-md-2">
+          <label for="inputState" class="form-label">Partido</label>
+          <select id="inputState" class="form-select" name="partido">
+            <option selected>Elegir...</option>
+            <option value="tigre">Tigre</option>
+            <option value="vicente-lopez">Vicente López</option>
+            <option value="san-fernando">San Fernando</option>
+            <option value="san-isidro">San Isidro</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label for="descripcion" class="form-label">Descripción:</label>
+          <textarea class="form-control" id="descripcion" rows="3" style="width: 1000px;" name="descripcion"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Subir</button>
+        </div>
+      </form>    
+      <script>
+        function confirmSubmit() {
+            // Muestra una ventana de confirmación al usuario
+            var confirmation = confirm("¿Desea proceder a ingresar las carreras?");
+
+            if (confirmation) {
+                // Redirige al usuario a la página para ingresar carreras
+                window.location.href = "../DTER6 Web/form-carreras.php";
+                return true; // Permite el envío del formulario
+            } else {
+                // Redirige al usuario de nuevo al inicio (home)
+                window.location.href = "form.html";
+                return false; // Cancela el envío del formulario
+            }
+        }
+      </script>
+</body>
+</html>
